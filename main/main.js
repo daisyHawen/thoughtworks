@@ -11,7 +11,7 @@ module.exports = function main() {
     // return Tom.introduce()
 
     /*--quiz5--*/
-    let result = myMath(args[0])
+    let result = myMath([6, 9, 15, -2, 92, 11])
     console.log("最小值＝" + result.min);
     console.log("最大值＝" + result.max);
     console.log("平均数量＝" + result.length);
