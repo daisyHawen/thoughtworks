@@ -35,7 +35,7 @@ function printOrder(items) {
     for (let i = 0; i < newItems.length; i++) {
         var money = newItems[i].price * newItems[i].num
         total += money;
-        output += "名称: " + newItems[i].name + "，数量：" + newItems[i].num + newItems[i].unit + " ，单价：" + newItems[i].price.toFixed(2) + "(元)，小计：" + money + '(元)' + "\n";
+        output += "名称: " + newItems[i].name + "，数量：" + newItems[i].num + newItems[i].unit + " ，单价：" + newItems[i].price.toFixed(2) + "(元)，小计：" + money.toFixed(2) + '(元)' + "\n";
     }
     output += "----------------------\n";
     output += "总计：" + total.toFixed(2) + "(元)\n";
@@ -45,16 +45,22 @@ function printOrder(items) {
 //合并商品
 function mergeItem(items) {
     /*合并重复的商品*/
+    var newItems = [];
     for (let i = 0; i < items.length; i++) {
         let curItem = items[i];
-        for (let j = i; j < items.length; j++) {
-            if (items[j].id == curItem.id) {
-                items[i].num += 1;
-                items.splice(j, 1); //删除这个元素
-            }
+
+        let newLen = newItems.length;
+        if (newLen == 0) {
+            newItems.push(curItem);
+            continue;
+        }
+        if (newItems[newLen - 1].id == curItem.id) {
+            newItems[newLen - 1].num += 1;
+        } else {
+            newItems.push(curItem);
         }
     }
-    return items;
+    return newItems;
 }
 module.exports = function POS(orderArr) {
     let items = [];
