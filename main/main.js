@@ -1,5 +1,5 @@
 const mymod = require('./mod.js')
-const klass = require('./klass.js') //es5
+const person = require('./person.js') //es5
 const es6class = require('./es6class.js') //es6
 
 module.exports = function main() {
