@@ -9,6 +9,6 @@ function Student(name, age, klass) {
 Student.prototype = new Person();
 Student.prototype.construtor = Student;
 Student.prototype.introduce = function() {
-    return 'My name is ' + this.name + '. I am ' + this.age + ' years old.' + ' I am a Student. I am at Class ' + this.klass;
+    return 'My name is ' + this.name + '. I am ' + this.age + ' years old.' + ' I am a Student. I am at Class ' + this.klass + '.';
 }
 module.exports = Student
