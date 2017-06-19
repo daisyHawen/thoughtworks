@@ -38,7 +38,7 @@ function printOrder(items) {
         output += "名称：" + newItems[i].name + "，数量：" + newItems[i].num + newItems[i].unit + "，单价：" + newItems[i].price.toFixed(2) + "(元)，小计：" + money.toFixed(2) + '(元)' + "\n";
     }
     output += "----------------------\n";
-    output += "总计： " + total.toFixed(2) + "(元)\n";
+    output += "总计：" + total.toFixed(2) + "(元)\n";
     output += "**********************";
     return output;
 }
