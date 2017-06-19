@@ -27,5 +27,7 @@ module.exports = function main() {
         'ITEM000004'
     ]
     var output = pos(order);
-    console.log(output)
+    // console.log(output)
+    console.log('***<没钱赚商店>购物清单***\n名称：可口可乐，数量：5瓶，单价：3.00(元)，小计：15.00(元)\n名称：雪碧，数量：2瓶，单价：3.00(元)，小计：6.00(元)\n名称：电池，数量：1个，单价：2.00(元)，小计：2.00(元)\n----------------------\n总计：23.00(元)\n**********************')
+    return output;
 };
