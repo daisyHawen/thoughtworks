@@ -35,10 +35,10 @@ function printOrder(items) {
     for (let i = 0; i < newItems.length; i++) {
         var money = newItems[i].price * newItems[i].num
         total += money;
-        output += "名称: " + newItems[i].name + "，数量：" + newItems[i].num + newItems[i].unit + " ，单价：" + newItems[i].price.toFixed(2) + "(元)，小计：" + money.toFixed(2) + '(元)' + "\n";
+        output += "名称：" + newItems[i].name + "，数量：" + newItems[i].num + newItems[i].unit + " ，单价：" + newItems[i].price.toFixed(2) + "(元)，小计： " + money.toFixed(2) + '(元)' + "\n";
     }
     output += "----------------------\n";
-    output += "总计：" + total.toFixed(2) + "(元)\n";
+    output += "总计： " + total.toFixed(2) + "(元)\n";
     output += "**********************";
     return output;
 }
