@@ -12,9 +12,6 @@ module.exports = function main() {
 
     /*--quiz5--*/
     let result = myMath([6, 9, 15, -2, 92, 11])
-    console.log("最小值＝" + result.min);
-    console.log("最大值＝" + result.max);
-    console.log("平均数量＝" + result.length);
-    console.log("平均值＝" + result.average);
+    console.log("o)最小值＝" + result.min + "\n" + "o)最大值＝" + result.max + "\n" + "o)元素数量＝" + result.length + "\n" + "o)平均值＝" + result.average);
 
 };
