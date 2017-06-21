@@ -35,7 +35,9 @@ module.exports = function main() {
     var output = pos(order);
     console.log(output)
     */
-    var output = emailReg.emailReg('tom@mail.com')
+    var output = emailReg.emailReg('tom@gmail.com')
+    var output2 = emailReg.emailReg(args[0])
+
     console.log(output)
     return output;
 };
