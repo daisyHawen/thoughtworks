@@ -6,7 +6,7 @@ const pos = require('./shop');
 
 const emailReg = require('./email');
 
-module.exports = function main() {
+module.exports = function main(email, suffixes) {
     let args = arguments;
     /*----quiz4---*/
     // let Tom = new Student('Tom', '21', '2');
@@ -36,7 +36,7 @@ module.exports = function main() {
     console.log(output)
     */
     var output = emailReg.emailReg('tom@gmail.com')
-    var output2 = emailReg.emailReg(args[0])
+    var output2 = emailReg.emailReg(email, suffixes)
 
     console.log(output)
     return output;
